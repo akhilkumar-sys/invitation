@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#3d2a5c" />
+    <title>The Final Surprise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body class="chapter-page surprise" data-letter="letterPage3">
+    <div class="surprise__sky" aria-hidden="true"></div>
+    <div class="surprise__glow" aria-hidden="true"></div>
+    <div class="surprise__scatter" aria-hidden="true">
+      <div class="surprise__scatter-floor"></div>
+      <span class="clue">❓</span><span class="clue">🎁</span><span class="clue">✨</span>
+      <span class="clue">❓</span><span class="clue">🎀</span><span class="clue">🎁</span>
+      <span class="clue">✨</span><span class="clue">❓</span><span class="clue">🎁</span>
+      <span class="clue">🎀</span><span class="clue">❓</span><span class="clue">✨</span>
+      <span class="clue">🎁</span><span class="clue">❓</span><span class="clue">🎀</span>
+      <span class="clue">✨</span><span class="clue">🎁</span><span class="clue">❓</span>
+      <span class="clue">🎀</span><span class="clue">✨</span><span class="clue">🎁</span>
+      <span class="clue">❓</span><span class="clue">🎀</span>
+    </div>
+
+    <nav class="page-nav" aria-label="Chapter">
+      <span>Chapter 3</span>
+      <a class="btn btn-ghost" href="../index.html" style="padding: 0.5rem 1rem; font-size: 0.9rem"
+        >Home</a
+      >
+    </nav>
+
+    <main class="chapter__content">
+      <h1>guess the final surprise?</h1>
+      <p class="subtitle">Idk if you would like this or not👀👀🫣🫣</p>
+
+      <section id="guess-panel" class="guess-panel" aria-labelledby="guess-heading">
+        <p id="guess-riddle" class="guess-panel__riddle"></p>
+        <form id="guess-form" class="guess-panel__form" autocomplete="off">
+          <label class="sr-only" for="guess-input">Your guess</label>
+          <input
+            id="guess-input"
+            class="guess-panel__input"
+            type="text"
+            placeholder="Type your guess…"
+            required
+          />
+          <button type="submit" class="btn btn-primary guess-panel__submit">Guess</button>
+        </form>
+        <button type="button" id="guess-hint-btn" class="btn btn-ghost guess-panel__hint">
+          Need a hint?
+        </button>
+        <p id="guess-feedback" class="guess-panel__feedback" hidden role="status"></p>
+      </section>
+
+      <section id="surprise-reveal" class="surprise-reveal" hidden>
+        <p class="surprise-reveal__badge" aria-hidden="true">🎁</p>
+        <p class="chapter__hint">You solved it — tap the heart on the envelope</p>
+        <div class="envelope-wrap">
+          <div class="envelope" aria-hidden="true">
+            <div class="envelope__base"></div>
+            <div class="envelope__flap"></div>
+          </div>
+          <button
+            type="button"
+            id="heart-btn"
+            class="heart-btn"
+            aria-label="Read the letter"
+            aria-expanded="false"
+          >
+            <span class="heart-btn__icon" aria-hidden="true">♥</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer page-footer--chapter">
+      <a class="btn btn-ghost" href="../index.html">← Back to the beginning</a>
+    </footer>
+
+    <div
+      id="letter-overlay"
+      class="letter-overlay"
+      aria-hidden="true"
+      role="dialog"
+      aria-labelledby="letter-title"
+    >
+      <article class="letter">
+        <h2 id="letter-title">Your surprise</h2>
+        <div id="letter-body" class="letter__body"></div>
+        <button type="button" id="letter-close" class="btn btn-ghost letter__close">
+          Fold the letter
+        </button>
+      </article>
+    </div>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/guess.js"></script>
+    <script src="../js/envelope.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        InvitationAuth.requireUnlock(3, "../unlock.html");
+      });
+    </script>
+  </body>
+</html>

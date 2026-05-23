@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Unlock chapter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <main class="gate">
+      <div class="gate__card">
+        <h1 id="gate-title">Chapter</h1>
+        <p id="gate-hint">Enter the secret word to continue.</p>
+        <form id="gate-form" autocomplete="off">
+          <label for="gate-password">Secret word</label>
+          <input
+            id="gate-password"
+            name="password"
+            type="password"
+            placeholder="whisper it here…"
+            required
+            autofocus
+          />
+          <p id="gate-error" class="gate__error" hidden role="alert"></p>
+          <button type="submit" class="btn btn-primary" style="width: 100%">
+            Open chapter
+          </button>
+        </form>
+        <a class="gate__back" href="index.html">← Back to start</a>
+      </div>
+    </main>
+    <script src="js/config.js"></script>
+    <script src="js/auth.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        InvitationAuth.initUnlockForm();
+      });
+    </script>
+  </body>
+</html>
