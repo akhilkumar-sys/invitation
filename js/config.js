@@ -55,4 +55,17 @@ I wanted to go to wonderla with youuu so I booked the tickets🥹🥹🤭🤭�
     2: "Next??",
     3: "The Final Surprise",
   },
+
+  /** /date — letter in the envelope (edit when you have the words) */
+  letterDate: `Date ki veldam ankunnam kadaaaaa.....wanted to ask you like this😩😩😩🤭🤭🤭
+
+          You remember you liked a reel? 
+           - Dressed up in heels
+           - Flowers in hand
+           - Reservations already made
+           - Icecream at the end (nen kudaaa thintaaaa😌😌😌)
+
+          Idk...wanted to go this friday before our engagement......Lesss gooo ??? 🥹🥹🥹
+
+          Rareism frock veskoo🥹🤭🤭`,
 };

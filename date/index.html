@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#f4b8c8" />
+    <meta name="description" content="A date before our engagement." />
+    <title>A date before our engagement??</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body class="chapter-page date-page" data-letter="letterDate">
+    <div class="date-page__bg" aria-hidden="true"></div>
+
+    <nav class="page-nav" aria-label="Date">
+      <span>For you</span>
+      <a class="btn btn-ghost" href="../index.html" style="padding: 0.5rem 1rem; font-size: 0.9rem"
+        >Home</a
+      >
+    </nav>
+
+    <main class="chapter__content">
+      <h1>A date before our engagement??</h1>
+      <p class="subtitle">Lesssssss gooooo!!!!😩😩😩</p>
+
+      <div class="envelope-wrap">
+        <div class="envelope" aria-hidden="true">
+          <div class="envelope__base"></div>
+          <div class="envelope__flap"></div>
+        </div>
+        <button
+          type="button"
+          id="heart-btn"
+          class="heart-btn"
+          aria-label="Read the letter"
+          aria-expanded="false"
+        >
+          <span class="heart-btn__icon" aria-hidden="true">♥</span>
+        </button>
+      </div>
+    </main>
+
+    <footer class="page-footer page-footer--chapter">
+      <a class="btn btn-ghost" href="../index.html">← Back to the beginning</a>
+    </footer>
+
+    <div
+      id="letter-overlay"
+      class="letter-overlay"
+      aria-hidden="true"
+      role="dialog"
+      aria-labelledby="letter-title"
+    >
+      <article class="letter">
+        <h2 id="letter-title">My dear future wife🥹🥹🥹</h2>
+        <div id="letter-body" class="letter__body"></div>
+        <button type="button" id="letter-close" class="btn btn-ghost letter__close">
+          Fold the letter
+        </button>
+      </article>
+    </div>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/envelope.js"></script>
+  </body>
+</html>

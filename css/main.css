@@ -807,6 +807,79 @@ img {
   color: #2a1a3a;
 }
 
+/* --- Date page (/date) — lily garden wallpaper --- */
+.date-page__bg {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  background-color: #f0d4e4;
+  background-image: url("../images/lily-garden-wallpaper.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.date-page__bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0.12) 32%,
+    transparent 58%
+  );
+}
+
+@media (orientation: portrait) {
+  .date-page__bg {
+    background-size: cover;
+    background-position: center bottom;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .date-page__bg {
+    background-size: auto 100%;
+    background-position: center bottom;
+  }
+}
+
+.date-page .chapter__content h1,
+.date-page .chapter__content .subtitle,
+.date-page .chapter__hint {
+  color: var(--ink);
+  text-shadow: 0 1px 16px rgba(255, 255, 255, 0.95), 0 0 40px rgba(255, 255, 255, 0.65);
+}
+
+.date-page .chapter__content .subtitle,
+.date-page .chapter__hint {
+  color: var(--ink-soft);
+}
+
+.date-page .page-nav {
+  background: rgba(255, 255, 255, 0.45);
+  border-bottom-color: rgba(244, 160, 180, 0.35);
+  backdrop-filter: blur(6px);
+}
+
+.date-page .page-nav span {
+  color: var(--ink);
+}
+
+.date-page .btn-ghost {
+  color: var(--ink-soft);
+  background: rgba(255, 255, 255, 0.55);
+  border-color: rgba(244, 160, 180, 0.4);
+}
+
+.date-page .btn-primary {
+  background: linear-gradient(135deg, #e88aa8, #f4b8c8);
+  box-shadow: 0 8px 24px rgba(232, 138, 168, 0.35);
+  color: #4a2030;
+}
+
 /* Guessing game */
 .guess-panel {
   position: relative;
